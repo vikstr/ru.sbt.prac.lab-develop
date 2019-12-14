@@ -1,0 +1,83 @@
+{
+  "latitude": 55.3601,
+  "longitude": 37.5589,
+  "timezone": "Europe/Moscow",
+  "currently": {
+    "time": 1574942813,
+    "summary": "Overcast",
+    "icon": "cloudy",
+    "precipIntensity": 0.0089,
+    "precipProbability": 0.02,
+    "precipType": "rain",
+    "temperature": -0.56,
+    "apparentTemperature": -4.24,
+    "dewPoint": -5.22,
+    "humidity": 0.71,
+    "pressure": 1014.8,
+    "windSpeed": 3.07,
+    "windGust": 6.31,
+    "windBearing": 152,
+    "cloudCover": 0.89,
+    "uvIndex": 0,
+    "visibility": 10.069,
+    "ozone": 229
+  },
+  "hourly": {
+    "data": [
+      {
+        "time": 1574888400,
+        "summary": "Overcast throughout the day.",
+        "icon": "partly-cloudy-day",
+        "sunriseTime": 1574918940,
+        "sunsetTime": 1574946540,
+        "moonPhase": 0.07,
+        "precipIntensity": 0.0051,
+        "precipIntensityMax": 0.0188,
+        "precipIntensityMaxTime": 1574964540,
+        "precipProbability": 0.05,
+        "precipType": "snow",
+        "precipAccumulation": 0.1,
+        "temperature": -0.2,
+        "temperatureHighTime": 1574941200,
+        "temperatureLow": -2.92,
+        "temperatureLowTime": 1574956800,
+        "apparentTemperatureHigh": -4.14,
+        "apparentTemperatureHighTime": 1574941380,
+        "apparentTemperatureLow": -7.09,
+        "apparentTemperatureLowTime": 1574956800,
+        "dewPoint": -5.41,
+        "humidity": 0.77,
+        "pressure": 1015.7,
+        "windSpeed": 2.64,
+        "windGust": 9.11,
+        "windGustTime": 1574953920,
+        "windBearing": 160,
+        "cloudCover": 0.8,
+        "uvIndex": 0,
+        "uvIndexTime": 1574932560,
+        "visibility": 11.469,
+        "ozone": 236.2,
+        "temperatureMin": -3.09,
+        "temperatureMinTime": 1574954100,
+        "temperatureMax": -0.2,
+        "temperatureMaxTime": 1574941200,
+        "apparentTemperatureMin": -7.28,
+        "apparentTemperatureMinTime": 1574954220,
+        "apparentTemperatureMax": -4.14,
+        "apparentTemperatureMaxTime": 1574941380
+      }
+    ]
+  },
+  "flags": {
+    "sources": [
+      "cmc",
+      "gfs",
+      "icon",
+      "isd",
+      "madis"
+    ],
+    "nearest-station": 16.787,
+    "units": "si"
+  },
+  "offset": 3
+}
