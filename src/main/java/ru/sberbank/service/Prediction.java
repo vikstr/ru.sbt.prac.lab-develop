@@ -2,7 +2,6 @@ package ru.sberbank.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
 import java.util.List;
@@ -28,7 +27,6 @@ public class Prediction {
             sumX += xi;
             sumX2 += xi * xi;
         }
-        double meanTemperature = sumX/x.size();
         double meanSquareTemperature = sumX2/x.size();
 
         Double sumY = 0.0;
@@ -39,7 +37,6 @@ public class Prediction {
         }
 
         double meanRate = sumY/y.size();
-        double meanSquareRate = sumY2/y.size();
 
         Double sumXY = 0.0;
         for (int i = 0; i < y.size(); i++) {
@@ -47,10 +44,13 @@ public class Prediction {
         }
 
         double mean = sumXY/y.size();
-
-        Integer n = x.size();
-
-        Double b = (mean -  x.get(1)* y.get(2)) / (meanSquareTemperature - sumX * sumX);
+        Double b= 0.0;
+        if (meanSquareTemperature - (sumX * sumX) >= 0.0) {
+            b = (mean - x.get(1) * y.get(2)) / (meanSquareTemperature - sumX * sumX);
+        }
+        else{
+            b = (mean - x.get(1) * y.get(2)) / (meanSquareTemperature - sumX * sumX + 0.01);
+        }
         Double a = meanRate;
 
         Double temperature = weatherService.getCurrentTemperature();
