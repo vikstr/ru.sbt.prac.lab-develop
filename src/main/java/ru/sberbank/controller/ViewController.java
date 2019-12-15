@@ -26,20 +26,20 @@ public class ViewController {
 
     @Autowired
     private Prediction prediction;
-    @RequestMapping(value = "/weather", method = RequestMethod.GET)
+    @RequestMapping(value = "/weather", method = RequestMethod.POST)
     public Weather indexweather() {
         Weather weather = new Weather();
         weather.temperature = weatherService.getCurrentTemperature();
         return weather;
     }
-    @RequestMapping(value = "/rbk", method = RequestMethod.GET)
+    @RequestMapping(value = "/rbk", method = RequestMethod.POST)
     public RBK index() {
         RBK rbk = new RBK();
         rbk.rate = service.getMaxRateForLastMonth();
         return rbk;
     }
 
-    @RequestMapping(value = "/prediction", method = RequestMethod.GET)
+    @RequestMapping(value = "/prediction", method = RequestMethod.POST)
     @ResponseBody
     public Predict indexprediction() {
         Predict predict = new Predict();
