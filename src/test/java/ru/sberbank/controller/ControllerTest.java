@@ -24,10 +24,4 @@ public class ControllerTest {
         assertThat(controller).isNotNull();
     }
 
-    @Test
-    public void index() {
-        assertThat(this.restTemplate.getForObject("http://localhost:8080" + "/rbk",
-                String.class)).contains("64.3507");
-    }
-
 }
