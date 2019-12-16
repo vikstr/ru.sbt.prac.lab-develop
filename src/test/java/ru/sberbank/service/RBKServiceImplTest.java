@@ -52,4 +52,4 @@ public class RBKServiceImplTest {
         ArrayList<Double> testArray = new ArrayList<>(Arrays.asList(0.5, 1.5, 2.5));
         assertEquals(2.5, service.getMaxFromArray(testArray), 0.1);
     }
-}
+}//yuiyiu
