@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gs-spring-boot" target="11" />
-      <module name="ru.sbt.prac.lab-develop" target="11" />
+      <module name="ru.sbt.prac.lab-develop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

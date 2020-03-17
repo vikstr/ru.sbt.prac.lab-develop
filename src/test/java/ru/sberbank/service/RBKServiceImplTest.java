@@ -23,7 +23,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-@SpringBootTest(classes = RBKService.class)
+@SpringBootTest(classes = RBKServiceImpl.class)
 public class RBKServiceImplTest {
 
     @Mock

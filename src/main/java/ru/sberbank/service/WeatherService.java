@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 import ru.sberbank.jsonparser.Data;
@@ -17,7 +18,7 @@ import java.io.IOException;
 import java.util.*;
 
 
-@SpringBootApplication
+@Component
 public class WeatherService {
     final String TOKEN = "c27fb993535ea9bcd42a6a2c46d506bd";
 

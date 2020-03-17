@@ -9,6 +9,4 @@ import java.util.Optional;
 @Repository
 public interface RateCrudRepository extends CrudRepository<Rate, Long> {
     Optional<Rate> findByDate(String dateString);
-    void delete(Rate entity);
-    Rate save(Rate entity);
 }

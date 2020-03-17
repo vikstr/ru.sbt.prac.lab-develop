@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 import ru.sberbank.dao.entity.Rate;
@@ -16,8 +17,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 
-@SpringBootApplication
-public class RBKServiceImpl implements RBKService{
+@Component
+public class RBKServiceImpl{
 
     private Optional<Rate> rate;
 
